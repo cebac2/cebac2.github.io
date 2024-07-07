@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Hier entstehen die wahren Wahrheiten!</title>
+    <style>      
+        body {         
+            background-color: #4FC7FF;
+            font-family: Arial, sans-serif;
+        }
+
+        .navi {
+            background-color: #003366; /* Blau der Überschrift */
+            padding: 10px;
+            display: flex;
+            justify-content: flex-start; /* Buttons nach links */
+        }
+        
+        .navi button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #00FF00; /* Grün */
+            color: #003366; /* Blau */
+            border: none;
+            border-radius: 5px;
+        }
+        
+        .navi button:hover {
+            background-color: #FFFFFF; /* Weißer Hover-Effekt */
+            color: #003366; /* Blau */
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .content h1 {
+            color: #003366; /* Blau der Überschrift */
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .content p {
+            color: #333;
+            font-size: 18px;
+            max-width: 800px;
+            margin-bottom: 20px;
+        }
+        
+        .contact-form {
+            background-color: #FFFFFF;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+        }
+        
+        .contact-form h2 {
+            color: #003366;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .contact-form label {
+            color: #333;
+            font-size: 16px;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .contact-form button {
+            background-color: #00FF00;
+            color: #003366;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .contact-form button:hover {
+            background-color: #FFFFFF; /* Weißer Hover-Effekt */
+            color: #003366; /* Blau */
+        }
+    </style>       
+</head>
+<body>
+    <div class="navi">
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="window.location.href='news.html'">News</button>
+        <button onclick="window.location.href='kontakt.html'">Kontakt</button>
+    </div>
+    <div class="content">
+        <h1>Kontaktieren Sie uns</h1>
+        <div class="contact-form">
+            <h2>Kontaktformular</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Nachricht</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Senden</button>
+            </form>
+        </div>
+    </div>   
+</body>
+</html>
